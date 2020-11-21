@@ -1,0 +1,6 @@
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\bin\Debug\CsharpAssignment1.exe.config
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\bin\Debug\CsharpAssignment1.exe
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\bin\Debug\CsharpAssignment1.pdb
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\obj\Debug\CsharpAssignment1.csproj.CoreCompileInputs.cache
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\obj\Debug\CsharpAssignment1.exe
+C:\Users\grund\Documents\GitHub\Basic_C#_Programs\CsharpAssignment1\CsharpAssignment1\obj\Debug\CsharpAssignment1.pdb
