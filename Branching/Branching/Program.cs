@@ -10,7 +10,7 @@ namespace Branching
     {
         static void Main(string[] args)
         {
-            Console.WriteLine.("What is your favorite number?");
+            Console.WriteLine("What is your favorite number?");
             int favNum = Convert.ToInt32(Console.ReadLine());
 
             string result = favNum == 12 ? "You have an awesome favorite number." : "You do not have an awesome favorite number.";
