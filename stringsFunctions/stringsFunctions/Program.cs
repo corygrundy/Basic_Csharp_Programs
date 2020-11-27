@@ -32,7 +32,6 @@ namespace stringsFunctions
 
             sb.AppendFormat("GHI{0}{1}", " Allowing us to make paragraphs with multiple strings.", " That can be easily manipulated later.", " This is very fun to utilize.");
 
-
             Console.WriteLine(sb);
             Console.ReadLine();
         }
