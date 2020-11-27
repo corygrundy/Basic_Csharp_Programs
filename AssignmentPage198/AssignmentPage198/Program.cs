@@ -16,10 +16,9 @@ namespace AssignmentPage198
             stringsArray[2] = "This string is the last o three in this array.";
 
             Console.WriteLine("Please select an index for the array of strings.");
-            
+            int indexNum = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(stringsArray[indexNum]);
             Console.ReadLine();
-
-
         }
     }
 }
