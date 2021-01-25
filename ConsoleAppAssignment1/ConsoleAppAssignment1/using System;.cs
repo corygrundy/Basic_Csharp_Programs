@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,24 +52,28 @@ namespace ConsoleAppAssignment1
             //    console.writeline("> " + input);
             //}
 
-            int k = 0;
-            while (k < 10)
-            {
-                Console.WriteLine("k = {0}", k);
+            int i = 0;
 
-                k++;
+            while (true)
+            {
+                Console.WriteLine("i = {0}", i);
+
+                i++;
+
+                if (i > 10)
+                    break;
             }
 
             List<string> catList1 = new List<string> { "George", "Kenny", "Shade" };
 
             Console.WriteLine("Please input  to search for a cat.");
             string Input4 = Console.ReadLine();
-
+            
             bool found = false;
             for (int i = 0; i < catList1.Count; i++)
             {
                 if (Input4 == catList1[i]) //if a user's input matches a string in the list above, it will execute this code.
-                {
+                {      
                     Console.WriteLine(i); //output the index of the found item in the list.
                     found = true;
                     break;  //this stops the loop if a match is found.
@@ -78,32 +82,6 @@ namespace ConsoleAppAssignment1
             if (!found)
             {
                 Console.WriteLine("Your input is not in the list.");
-            }
-
-            List<string> catList2 = new List<string> { "Sadie", "Spicy", "Spicy" };
-
-            string Input5 = Console.ReadLine();
-
-            for (int i = 0; i < catList2.Count; i++)
-            {
-                if (Input5 == catList2[i])
-                {
-                    Console.WriteLine(i);
-                    found = true;
-                    break;
-                }
-            }
-            if (!found)
-            {
-                Console.WriteLine("Your input is not in the list.");
-            }
-
-            List<string> List3 = new List<string> { "Kobe", "Millie", "Millie", "Sadie" };
-
-            foreach (string it in List3)
-            {
-                Console.WriteLine(List3[1] + List3[2] + " are repeating in this list.");
-                Console.ReadLine();
             }
             
         }
