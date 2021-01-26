@@ -17,12 +17,12 @@ namespace ConsoleAppAssignment1
             dogsarray[3] = "german shepard";
 
 
-            Console.WriteLine("please add breed to the array of dogs");
+            Console.WriteLine("Please add breed to the array of dogs");
             string userinput = Console.ReadLine();
 
             for (int i = 0; i < dogsarray.Length; i++)
             {
-                dogsarray[i] = dogsarray[i] + userinput;
+                Console.WriteLine(dogsarray[i] = dogsarray[i] + " " + userinput); //This line will print off every item in the array with the user's input added. It was missing "Console.WriteLine()" when I last submitted this.
             }
             Console.ReadLine();
 
@@ -39,6 +39,7 @@ namespace ConsoleAppAssignment1
                 Console.WriteLine("> " + input.ToUpper());
             }
 
+               //Below is an infinite loop.
             //while (true)
             //{
             //    int input = convert.toint32(console.readline());
@@ -52,7 +53,7 @@ namespace ConsoleAppAssignment1
             //    console.writeline("> " + input);
             //}
 
-            int k = 0;
+            int k = 0;     //A loop where the comparison that’s used to determine whether to continue iterating the loop is a “<” operator.
             while (k < 10)
             {
                 Console.WriteLine("k = {0}", k);
@@ -60,11 +61,17 @@ namespace ConsoleAppAssignment1
                 k++;
             }
 
-            List<string> catList1 = new List<string> { "George", "Kenny", "Shade" };
+            int c = 0;     //A loop where the comparison that’s used to determine whether to continue iterating the loop is a “<=” operator.
+            while (c <= 10)
+            {
+                Console.WriteLine("c <= {0}", c);
 
+                c++;
+            }
+
+            List<string> catList1 = new List<string> { "George", "Kenny", "Shade" };
             Console.WriteLine("Please input  to search for a cat.");
             string Input4 = Console.ReadLine();
-
             bool found = false;
             for (int i = 0; i < catList1.Count; i++)
             {
@@ -81,9 +88,7 @@ namespace ConsoleAppAssignment1
             }
 
             List<string> catList2 = new List<string> { "Sadie", "Spicy", "Spicy" };
-
             string Input5 = Console.ReadLine();
-
             for (int i = 0; i < catList2.Count; i++)
             {
                 if (Input5 == catList2[i])
@@ -99,7 +104,6 @@ namespace ConsoleAppAssignment1
             }
 
             List<string> List3 = new List<string> { "Kobe", "Millie", "Millie", "Sadie" };
-
             foreach (string it in List3)
             {
                 Console.WriteLine(List3[1] + List3[2] + " are repeating in this list.");
