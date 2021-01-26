@@ -10,6 +10,7 @@ namespace ConsoleAppAssignment1
     {
         static void Main(string[] args)
         {
+            //Begin part 1
             string[] dogsarray = new string[4];
             dogsarray[0] = "alaskan malamute";
             dogsarray[1] = "pug";
@@ -38,7 +39,8 @@ namespace ConsoleAppAssignment1
 
                 Console.WriteLine("> " + input.ToUpper());
             }
-
+    
+            //Begin part 2
                //Below is an infinite loop.
             //while (true)
             //{
@@ -53,6 +55,8 @@ namespace ConsoleAppAssignment1
             //    console.writeline("> " + input);
             //}
 
+
+            //Begin part 3
             int k = 0;     //A loop where the comparison that’s used to determine whether to continue iterating the loop is a “<” operator.
             while (k < 10)
             {
@@ -69,6 +73,7 @@ namespace ConsoleAppAssignment1
                 c++;
             }
 
+            //Begin part 4
             List<string> catList1 = new List<string> { "George", "Kenny", "Shade" };
             Console.WriteLine("Please input  to search for a cat.");
             string Input4 = Console.ReadLine();
@@ -87,13 +92,14 @@ namespace ConsoleAppAssignment1
                 Console.WriteLine("Your input is not in the list.");
             }
 
+            //Begin part 5
             List<string> catList2 = new List<string> { "Sadie", "Spicy", "Spicy" };
             string Input5 = Console.ReadLine();
             for (int i = 0; i < catList2.Count; i++)
             {
                 if (Input5 == catList2[i])
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i);       
                     found = true;
                     break;
                 }
@@ -103,13 +109,21 @@ namespace ConsoleAppAssignment1
                 Console.WriteLine("Your input is not in the list.");
             }
 
+            //Begin part 6
             List<string> List3 = new List<string> { "Kobe", "Millie", "Millie", "Sadie" };
-            foreach (string it in List3)
+            List<string> List4 = new List<string>();
+            string  in List3 Convert.ToBoolean
+            foreach (string )
             {
-                Console.WriteLine(List3[1] + List3[2] + " are repeating in this list.");
-                Console.ReadLine();
+                if (dogName in List3)
+                {
+                    List4.Add(dogName);
+                }
+                
+
             }
-            
+            Console.WriteLine(List4);
+            Console.ReadLine();
         }
     }
 }
