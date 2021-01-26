@@ -94,6 +94,7 @@ namespace ConsoleAppAssignment1
 
             //Begin part 5
             List<string> catList2 = new List<string> { "Sadie", "Spicy", "Spicy" };
+            Console.WriteLine("Please enter Sadie or Spicy to continue.")
             string Input5 = Console.ReadLine();
             for (int i = 0; i < catList2.Count; i++)
             {
@@ -101,7 +102,6 @@ namespace ConsoleAppAssignment1
                 {
                     Console.WriteLine(i);       
                     found = true;
-                    break;
                 }
             }
             if (!found)
@@ -112,15 +112,16 @@ namespace ConsoleAppAssignment1
             //Begin part 6
             List<string> List3 = new List<string> { "Kobe", "Millie", "Millie", "Sadie" };
             List<string> List4 = new List<string>();
-            string  in List3 Convert.ToBoolean
-            foreach (string )
+            foreach (string dogname in List3)
             {
-                if (dogName in List3)
+                foreach (string dogname2 in List4)
                 {
-                    List4.Add(dogName);
+                    if (dogname == dogname2)
+                    {
+                        Console.WriteLine(dogname + " has appeared before.");
+                    }
                 }
-                
-
+                List4.Add(dogname);
             }
             Console.WriteLine(List4);
             Console.ReadLine();
