@@ -38,6 +38,12 @@ namespace AssignmentPage198
                 Console.WriteLine(intArray[ui]);
             }
             Console.ReadLine();
+
+            List<string> List3 = new List<string> { "This is string at index 0.", "This is a string at index 1.", "This final string is at index 2." };
+            Console.WriteLine("Please select an index between 0-2.");
+            int ui1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(List3[ui1]);
+            Console.ReadLine();
         }
     }
 }
