@@ -28,7 +28,15 @@ namespace AssignmentPage198
 
             Console.WriteLine("Please select an index number between 0-3");
             int ui = Convert.ToInt32(Console.ReadLine());     //The line of code that converts the user input into an int type allowing an index from an array be compared.
-            Console.WriteLine(intArray[ui]);
+            if (ui > 3 || ui < 0)
+            {
+
+                Console.WriteLine("Error: that was not a number between 0-3. Shutting down...");
+            }
+            else
+            {
+                Console.WriteLine(intArray[ui]);
+            }
             Console.ReadLine();
         }
     }
