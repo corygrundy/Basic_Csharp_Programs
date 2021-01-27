@@ -8,7 +8,7 @@ namespace AssognmentPage226
     {   //Begin part 1
         public static int MethodMulti1(int num1)
         {
-            int total1 = num1 + 10;
+            int total1 = num1 * 10;
             return total1;
         }
 
@@ -20,12 +20,12 @@ namespace AssognmentPage226
         }
 
         //Begin part 5
-        public static string MethodAdd1(string num3)
+        public static int MethodAdd1(string num3)
         {
             int Num3 = Convert.ToInt32(num3);   //An attempt to convert the user's input into a integer.
             int total3 = Num3 + 5;
-            string total3string = Convert.ToBase64String(total3);
-            return total3String;
+            //string total3string = Convert.ToBase64String(total3);
+            return total3;
         }
     }
 }
