@@ -26,10 +26,7 @@ namespace TwentyOne
                     card.Face = face;
                     Cards.Add(card);
                 }
-
             }
-
-
         }
         public List<Card> Cards { get; set; }
     }
