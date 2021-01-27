@@ -25,6 +25,7 @@ namespace AssognmentPage226
             //Begin part 6
             Console.WriteLine("Enter a string to add the number 5 to it.");
             string ui3 = Console.ReadLine();
+            //string result3 = Convert.ToString(Class1.MethodAdd1(ui3)); 
             int result3 = Class1.MethodAdd1(ui3);
             Console.WriteLine("Your string with the added number of ten reads, " + result3);
             Console.ReadLine();
