@@ -12,7 +12,7 @@ namespace AssignmentPage231
             Console.WriteLine(result);
         }
 
-        public int Method2(out int num2, out int num3)
+        public int Method1(out int num2, out int num3)
         {
             num2 = 2;
             num3 = 3;

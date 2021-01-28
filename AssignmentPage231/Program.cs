@@ -19,7 +19,7 @@ namespace AssignmentPage231
             int ui2 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Now wenter a second number.");
             int ui3 = Convert.ToInt32(Console.ReadLine());
-            int response1 = classObj.Method2( out ui2, out ui3);
+            int response1 = classObj.Method1( out ui2, out ui3);
             Console.WriteLine("Your numbers added together equal " + response1);
             Console.ReadLine();
         }
