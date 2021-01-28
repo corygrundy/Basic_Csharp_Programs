@@ -29,5 +29,22 @@ namespace TwentyOne
             }
         }
         public List<Card> Cards { get; set; }
+
+        public void Shuffle(int times = 1)  //The int Times here is an optional paramater which is something that is used by default when not specified.
+        {
+            for (int i = 0; i < times; i++)
+            {
+                List<Card> TempList = new List<Card>();
+                Random random = new Random();
+
+                while (Cards.Count > 0)
+                {
+                    int randomIndex = random.Next(0, Cards.Count);
+                    TempList.Add(Cards[randomIndex]);
+                    Cards.RemoveAt(randomIndex);
+                }
+                this.Cards = TempList;
+            }
+        }
     }
 }
