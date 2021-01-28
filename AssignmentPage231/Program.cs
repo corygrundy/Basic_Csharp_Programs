@@ -15,9 +15,12 @@ namespace AssignmentPage231
             int ui1 = Convert.ToInt32(Console.ReadLine());
             classObj.Method1(ui1);
 
-            Console.WriteLine("How about some math?");
-            int response1 = classObj.Method1();
-            Console.WriteLine("Three plus Four equals " + response1);
+            Console.WriteLine("How about some math? \n Enter a number.");
+            int ui2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Now wenter a second number.");
+            int ui3 = Convert.ToInt32(Console.ReadLine());
+            int response1 = classObj.Method2( out ui2, out ui3);
+            Console.WriteLine("Your numbers added together equal " + response1);
             Console.ReadLine();
         }
     }
