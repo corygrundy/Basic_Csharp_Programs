@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace AssingmentPage228
-{
+{   //Part 1 start
     public class Class1
     {
         public void Method1(int num1, int num2)
