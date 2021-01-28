@@ -4,10 +4,8 @@ using System.Text;
 
 namespace AssingmentPage228
 {
-    class Class1
+    public class Class1
     {
-        public static Class1 classObj = new Class1();
-
         public void Method1(int num1, int num2)
         {
             int result = num1 + 5;
