@@ -12,13 +12,13 @@ namespace AssignmentPage223
             return total1;
         }
 
-        public static int Method2(int num2)
+        public static int Method1(int num2)
         {
             int total2 = num2 * 4;
             return total2;
         }
 
-        public static int Method3(int num3)
+        public static int Method1(int num3)
         {
             int total3 = num3 / 3;
             return total3;

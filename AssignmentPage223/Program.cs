@@ -17,12 +17,12 @@ namespace AssignmentPage223
 
             Console.WriteLine("What number would you like to  multiply by 4?");
             int ui2 = Convert.ToInt32(Console.ReadLine());
-            int result2 = Class1.Method2(ui2);
+            int result2 = Class1.Method1(ui2);
             Console.WriteLine("Your number multiplied by 4 is " + result2);
 
             Console.WriteLine("What number would you like to divide by 3 with?");
             int ui3 = Convert.ToInt32(Console.ReadLine());
-            int result3 = Class1.Method3(ui3);
+            int result3 = Class1.Method1(ui3);
             Console.WriteLine("Your number divided by 3 is " + result3);
         }
     }
