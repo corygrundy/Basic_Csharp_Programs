@@ -4,26 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AssignmentPage223
+namespace AssognmentPage226
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            Console.WriteLine("What number would you like to add 5 to?");
+        {    //Begin part 2
+            Console.WriteLine("Enter a number to multiply by 10.");
             int ui1 = Convert.ToInt32(Console.ReadLine());
             int result1 = Class1.Method1(ui1);
-            Console.WriteLine("Your number plus 5 is " + result1);
+            Console.WriteLine("Your number plus 10 is " + result1);
 
-            Console.WriteLine("What number would you like to  multiply by 4?");
-            int ui2 = Convert.ToInt32(Console.ReadLine());
-            int result2 = Class1.Method1(ui2);
-            Console.WriteLine("Your number multiplied by 4 is " + result2);
+            //Begin part 4
+            Console.WriteLine("Enter a number for subtraction with decimals.");
+            decimal ui2 = Convert.ToDecimal(Console.ReadLine());    //Using Convert.ToDecimal here so a user may input a decimal
+            decimal result2 = Class1.Method1(ui2);
+            Console.WriteLine("Your number minus 1.3 is " + result2);
 
-            Console.WriteLine("What number would you like to divide by 3 with?");
-            int ui3 = Convert.ToInt32(Console.ReadLine());
+
+            //Begin part 6
+            Console.WriteLine("Enter a string to add the number 5 to it.");
+            string ui3 = Console.ReadLine();
+            //string result3 = Convert.ToString(Class1.MethodAdd1(ui3)); 
             int result3 = Class1.Method1(ui3);
-            Console.WriteLine("Your number divided by 3 is " + result3);
+            Console.WriteLine("Your string with the added number of ten reads, " + result3);
+            Console.ReadLine();
         }
     }
 }
