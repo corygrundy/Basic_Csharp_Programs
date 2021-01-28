@@ -14,7 +14,7 @@ namespace AssingmentPage228
             int ui1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter in a second number.");
             int ui2 = Convert.ToInt32(Console.ReadLine());
-            int result1 = Class1.Method1(ui1, ui2);
+            int result1 = classObj.Method1(ui1, ui2);
         }
     }
 }
