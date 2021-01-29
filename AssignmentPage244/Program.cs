@@ -24,7 +24,9 @@ namespace AssignmentPage244
             emp2.firstName = "Jack";
             emp2.lastName = "Grundy";
             emp2.Id = 002;
-            
+            Console.WriteLine(emp1 == emp2);
+            Console.WriteLine(emp1 != emp2);
+            Console.ReadLine();
         }
     }
 }
