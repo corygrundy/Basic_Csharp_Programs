@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace AssignmentPage244
 {
-    //begin part 3
-    public class Employee : Person, IQuittable
+    //Begin part 3      //Begin part 1 from page 255  (the <T>).
+    public class Employee<T> : Person, IQuittable
     {
+        //Begin part 2 from page 255
+        public Employee<string> Things { get; set; }
         public int Id { get; set;}
         //Begin part 4
         public override void SayName()
@@ -16,22 +18,27 @@ namespace AssignmentPage244
             Console.WriteLine("Name: " + firstName + " " + lastName);
         }
         //Begin part 2 of page 247
-        public void Quit(Employee employee)
+        public void Quit(Employee<string> employee)
         {
             Console.WriteLine("Employee " + firstName + " " + lastName + "has quit.");
         }
 
         //Begin part 1 of page 252
 
-        public static Boolean operator ==(Employee emp1, Employee emp2)
+        public static Boolean operator ==(Employee<T> emp1, Employee<T> emp2)
         {
             bool comp1 = emp1.Id == emp2.Id;
             return comp1;  
         }
-        public static Boolean operator !=(Employee emp1, Employee emp2)
+        public static Boolean operator !=(Employee<T> emp1, Employee<T> emp2)
         {
             bool comp2 = emp1.Id != emp2.Id;
             return comp2;
+        }
+
+        public static implicit operator Employee<T>(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
