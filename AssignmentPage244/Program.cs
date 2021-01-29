@@ -8,7 +8,7 @@ namespace AssignmentPage244
 {
     class Program
     {
-        public static void Main(string[] args, Employee firstName, object lastName)
+        public static void Main(string[] args)
         {
             //Begin part 5
             Employee emp1 = new Employee();
