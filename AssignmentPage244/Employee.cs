@@ -23,13 +23,15 @@ namespace AssignmentPage244
 
         //Begin part 1 of page 252
 
-        public static Employee operator ==(Employee Id, Employee Id)
+        public static Boolean operator ==(Employee emp1, Employee emp2)
         {
-            
+            bool comp1 = emp1.Id == emp2.Id;
+            return comp1;  
         }
-        public static Employee operator !=(Employee Id, Employee Id)
+        public static Boolean operator !=(Employee emp1, Employee emp2)
         {
-
+            bool comp2 = emp1.Id != emp2.Id;
+            return comp2;
         }
     }
 }
