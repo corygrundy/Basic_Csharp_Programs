@@ -11,8 +11,8 @@ namespace AssignmentPage267
         static void Main(string[] args)
         {
             Number num1 = new Number();
-            num1 = 2;
-            Console.WriteLine(num1);
+            num1.Amount = 2m;
+            Console.WriteLine(num1.Amount);
             Console.ReadLine();
         }
     }
