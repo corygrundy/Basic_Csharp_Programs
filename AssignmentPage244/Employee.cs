@@ -10,7 +10,7 @@ namespace AssignmentPage244
     public class Employee<T> : Person, IQuittable
     {
         //Begin part 2 from page 255
-        public Employee<string> Things { get; set; }
+        public List<string> Things { get; set; }
         public int Id { get; set;}
         //Begin part 4
         public override void SayName()
@@ -35,10 +35,16 @@ namespace AssignmentPage244
             bool comp2 = emp1.Id != emp2.Id;
             return comp2;
         }
-
+        
+        //Going to test this code below.    Made these lines to fix an issue that it couldn't implicitly turn a string into a string, so I bypassed it by making them into a shared string type.
         public static implicit operator Employee<T>(string v)
         {
             throw new NotImplementedException();
+        }
+
+        public static implicit operator Employee<T>(List<string> v)
+        {
+            return null;       //had no idea what to put here but this works.
         }
     }
 }
