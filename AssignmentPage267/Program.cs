@@ -10,7 +10,10 @@ namespace AssignmentPage267
     {
         static void Main(string[] args)
         {
-            
+            Number num1 = new Number();
+            num1 = 2;
+            Console.WriteLine(num1);
+            Console.ReadLine();
         }
     }
 }
