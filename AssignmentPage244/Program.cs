@@ -17,6 +17,8 @@ namespace AssignmentPage244
             emp1.lastName = "Student";
             emp1.Id = 001;  //Also part of part 1 on page 252
             emp1.Things = new List<string> { "Sample info." };
+            Things.firstName = "Sample";
+            Things.lastName = "Student";
             //emp1.SayName();
             //IQuittable quittable1 = new Employee();
             //quittable1.Quit(emp1);
@@ -27,6 +29,8 @@ namespace AssignmentPage244
             emp2.lastName = "Grundy";
             emp2.Id = 002;
             emp2.Things = new List<string> { "My Father." };
+            Things.firstName = "Jack";
+            Things.lastName = "Grundy";
             //Console.WriteLine(emp1 == emp2);
             //Console.WriteLine(emp1 != emp2);
             //Console.ReadLine();
@@ -37,11 +41,19 @@ namespace AssignmentPage244
             emp3.lastName = "Grundy";
             emp3.Id = 003;
             emp3.Things = new List<string> { "My info." };
+            Things.firstName = "Cory";
+            Things.lastName = "Grundy";
 
-            foreach (var thing in emp3.Things)
+
+            foreach (char FirstName in Things.firstName)
             {
-                Console.WriteLine(thing);
+                List<string>Things.firstName.Add(char.ToString());
+                Console.WriteLine(FirstName);
             }
+            //foreach (string LastName  in Things.lastName)
+            //{
+            //    Console.WriteLine(lastName);
+            //}
         }
     }
 }
