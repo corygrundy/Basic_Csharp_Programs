@@ -40,9 +40,17 @@ namespace AssignmentPage244
             
 
 
-            foreach (string things in emp1.Things)
+            foreach (var element in emp1.Things)
             {
-
+                Console.WriteLine(element);
+            }
+            foreach (var element in emp2.Things)
+            {
+                Console.WriteLine(element);
+            }
+            foreach (var element in emp3.Things)
+            {
+                Console.WriteLine(element);
             }
             //foreach (string LastName  in Things.lastName)
             //{
