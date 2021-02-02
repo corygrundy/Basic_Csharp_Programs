@@ -11,12 +11,14 @@ namespace AssignmentPage244
         public static void Main(string[] args)
         {
             Employee<string> Things = new List<string>();
+            List<string> employees = new List<string>();
             //Begin part 5     //Added <string> for part 3 on page 255
             Employee<string> emp1 = new Employee<string>();
             emp1.Things = new List<string> { "Sample info.", "Sample", "Student", "001" };
             emp1.firstName = "Sample";
             emp1.lastName = "Student";
             emp1.Id = 001;  //Also part of part 1 on page 252
+            employees.Add(emp1.firstName);
             //emp1.SayName();
             //IQuittable quittable1 = new Employee();
             //quittable1.Quit(emp1);
@@ -27,6 +29,7 @@ namespace AssignmentPage244
             emp2.firstName = "Jack";
             emp2.lastName = "Grundy";
             emp2.Id = 002;
+            employees.Add(emp2.firstName);
             //Console.WriteLine(emp1 == emp2);
             //Console.WriteLine(emp1 != emp2);
             //Console.ReadLine();
@@ -37,43 +40,83 @@ namespace AssignmentPage244
             emp3.firstName = "Cory";
             emp3.lastName = "Grundy";
             emp3.Id = 003;
+            employees.Add(emp3.firstName);
 
             //Begin part 1
             Employee<string> emp4 = new Employee<string>();
-            emp3.Things = new List<string> { "Caleb", "Grundy", "004" };
-            emp3.firstName = "Caleb";
-            emp3.lastName = "Grundy";
-            emp3.Id = 004;
+            emp4.Things = new List<string> { "Caleb", "Grundy", "004" };
+            emp4.firstName = "Caleb";
+            emp4.lastName = "Grundy";
+            emp4.Id = 004;
+            employees.Add(emp4.firstName);
             Employee<string> emp5 = new Employee<string>();
-            emp3.Things = new List<string> { "Chase", "Sabre", "005" };
-            emp3.firstName = "Chase";
-            emp3.lastName = "Sabre";
-            emp3.Id = 005;
+            emp5.Things = new List<string> { "Chase", "Sabre", "005" };
+            emp5.firstName = "Chase";
+            emp5.lastName = "Sabre";
+            emp5.Id = 005;
+            employees.Add(emp5.firstName);
             Employee<string> emp6 = new Employee<string>();
-            emp3.Things = new List<string> { "Joe", "Laphardy", "006" };
-            emp3.firstName = "Joe";
-            emp3.lastName = "Laphardy";
-            emp3.Id = 006;
+            emp6.Things = new List<string> { "Joe", "Laphardy", "006" };
+            emp6.firstName = "Joe";
+            emp6.lastName = "Laphardy";
+            emp6.Id = 006;
+            employees.Add(emp6.firstName);
             Employee<string> emp7 = new Employee<string>();
-            emp3.Things = new List<string> { "Valdus", "White", "007" };
-            emp3.firstName = "Valdus";
-            emp3.lastName = "White";
-            emp3.Id = 007;
+            emp7.Things = new List<string> { "Valdus", "White", "007" };
+            emp7.firstName = "Valdus";
+            emp7.lastName = "White";
+            emp7.Id = 007;
+            employees.Add(emp7.firstName);
             Employee<string> emp8 = new Employee<string>();
-            emp3.Things = new List<string> { "Logan", "Vegas", "008" };
-            emp3.firstName = "Logan";
-            emp3.lastName = "Vegas";
-            emp3.Id = 008;
+            emp8.Things = new List<string> { "Logan", "Vegas", "008" };
+            emp8.firstName = "Logan";
+            emp8.lastName = "Vegas";
+            emp8.Id = 008;
+            employees.Add(emp8.firstName);
             Employee<string> emp9 = new Employee<string>();
-            emp3.Things = new List<string> { "Joe", "Johnson", "009" };
-            emp3.firstName = "Joe";
-            emp3.lastName = "Johnson";
-            emp3.Id = 009;
+            emp9.Things = new List<string> { "Joe", "Johnson", "009" };
+            emp9.firstName = "Joe";
+            emp9.lastName = "Johnson";
+            emp9.Id = 009;
+            employees.Add(emp9.firstName);
             Employee<string> emp10 = new Employee<string>();
-            emp3.Things = new List<string> { "Patrick", "Roy", "010" };
-            emp3.firstName = "Patrick";
-            emp3.lastName = "Roy";
-            emp3.Id = 010;
+            emp10.Things = new List<string> { "Patrick", "Roy", "010" };
+            emp10.firstName = "Patrick";
+            emp10.lastName = "Roy";
+            emp10.Id = 010;
+            employees.Add(emp10.firstName);
+
+            //Begin part 2 of page 271
+            List<string> Joes = new List<string>();
+            Console.WriteLine(employees[1]);
+
+            bool found = false;
+            foreach (string employee in employees)
+            {/*(int i = 0; i < employees.Count; i++) I only need this for a for loop right?*/
+                
+                if (employee == "Joe")
+                {
+                    Joes.Add(employee);
+                    found = true;
+                    Console.ReadLine();
+                }
+                else (int i = 0; i < employees.Count; i++)
+                {
+                    
+
+                }
+            }
+
+            //foreach (var firstname in employees)
+            //{
+
+
+            //    Joes.Add(Things.firstName);
+            //    Console.WriteLine(Joes);
+
+            //}
+
+            //List<string> empList = new List<string>() {  } 
 
             //Last part of page 255
             foreach (var element in emp1.Things)
