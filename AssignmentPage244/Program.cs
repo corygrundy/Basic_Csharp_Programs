@@ -90,21 +90,13 @@ namespace AssignmentPage244
             List<string> Joes = new List<string>();
             Console.WriteLine(employees[1]);
 
-            bool found = false;
+            
             foreach (string employee in employees)
             {/*(int i = 0; i < employees.Count; i++) I only need this for a for loop right?*/
+                employee == "Joe";
+                Joes.Add(employee);
+                Console.ReadLine();
                 
-                if (employee == "Joe")
-                {
-                    Joes.Add(employee);
-                    found = true;
-                    Console.ReadLine();
-                }
-                else (int i = 0; i < employees.Count; i++)
-                {
-                    
-
-                }
             }
 
             //foreach (var firstname in employees)
