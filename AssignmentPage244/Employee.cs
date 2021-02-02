@@ -10,7 +10,7 @@ namespace AssignmentPage244
     public class Employee<T> : Person, IQuittable
     {
         //Begin part 2 from page 255
-        public List<string> Things { get; set; }
+        public List<T> Things { get; set; }
         public int Id { get; set;}
         //Begin part 4
         public override void SayName()
