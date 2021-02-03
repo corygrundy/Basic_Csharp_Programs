@@ -93,11 +93,13 @@ namespace AssignmentPage244
             
             foreach (string employee in employees)
             {/*(int i = 0; i < employees.Count; i++) I only need this for a for loop right?*/
-                employee == "Joe";
-                Joes.Add(employee);
-                Console.ReadLine();
-                
+                if (employee == "Joe")
+                {
+                    Joes.Add(employee);
+                }
             }
+            Console.WriteLine(Joes);
+            Console.ReadLine();
 
             //foreach (var firstname in employees)
             //{
