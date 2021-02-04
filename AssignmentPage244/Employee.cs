@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace AssignmentPage244
 {
     //Begin part 3      //Begin part 1 from page 255  (the <T>).
-    public class Employee<T> : Person, IQuittable
+    public class Employee : Person, IQuittable
     {
         //Begin part 2 from page 255
-        public List<T> Things { get; set; }
         public int Id { get; set;}
         //Begin part 4
         public override void SayName()
