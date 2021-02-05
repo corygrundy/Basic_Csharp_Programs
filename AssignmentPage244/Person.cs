@@ -10,7 +10,7 @@ namespace AssignmentPage244
     public abstract class Person
     {
         //Another part of part 1 on page 252
-        public List<Employee<string>> Employees { get; set; }
+        public List<Employee> Employees { get; set; }
 
         //Part of part 1 on page 244
         public string firstName { get; set; }

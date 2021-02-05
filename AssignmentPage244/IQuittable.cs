@@ -9,6 +9,6 @@ namespace AssignmentPage244
     //Part 1 from page 247
     interface IQuittable
     {
-        public void Quit(Employee<string> employee);
+        public void Quit(Employee employee);
     }
 }

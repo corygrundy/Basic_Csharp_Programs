@@ -17,33 +17,38 @@ namespace AssignmentPage244
             Console.WriteLine("Name: " + firstName + " " + lastName);
         }
         //Begin part 2 of page 247
-        public void Quit(Employee<string> employee)
+        public void Quit(Employee employee)
         {
             Console.WriteLine("Employee " + firstName + " " + lastName + "has quit.");
         }
 
         //Begin part 1 of page 252
 
-        public static Boolean operator ==(Employee<T> emp1, Employee<T> emp2)
+        public static Boolean operator ==(Employee emp1, Employee emp2)
         {
             bool comp1 = emp1.Id == emp2.Id;
             return comp1;  
         }
-        public static Boolean operator !=(Employee<T> emp1, Employee<T> emp2)
+        public static Boolean operator !=(Employee emp1, Employee emp2)
         {
             bool comp2 = emp1.Id != emp2.Id;
             return comp2;
         }
         
         //Going to test this code below.    Made these lines to fix an issue that it couldn't implicitly turn a string into a string, so I bypassed it by making them into a shared string type.
-        public static implicit operator Employee<T>(string v)
+        public static implicit operator Employee(string v)
         {
             throw new NotImplementedException();
         }
 
-        public static implicit operator Employee<T>(List<string> v)
+        public static implicit operator Employee(List<string> v)
         {
             return null;       //had no idea what to put here but this works.
+        }
+
+        public static explicit operator string(Employee v)
+        {
+            return null;
         }
     }
 }
