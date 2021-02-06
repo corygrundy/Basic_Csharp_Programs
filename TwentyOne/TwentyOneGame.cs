@@ -129,7 +129,7 @@ namespace TwentyOne
             }
             foreach (Player player in Players)
             {
-                bool? playerWon = TwentyOneRules  = CompareHands(player.Hand, Dealer.Hand)
+                bool? playerWon = TwentyOneRules = CompareHands(player.Hand, Dealer.Hand);
             }
         }
         public override void ListPlayers()
