@@ -10,7 +10,7 @@ namespace TwentyOne
     {
         public List<Card> Hand { get; set; }
         public bool Stay { get; set; }
-        public bool isBustd { get; set; }
+        public bool isBusted { get; set; }
 
     }
 }
