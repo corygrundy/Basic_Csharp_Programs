@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace TwentyOne
+namespace Casino
 {
     public class Dealer
     {
@@ -18,7 +18,7 @@ namespace TwentyOne
             Hand.Add(Deck.Cards.First());
             string card = string.Format(Deck.Cards.First().ToString() + "\n");
             Console.WriteLine(Deck.Cards.First().ToString() + "\n");
-            using (StreamWriter file = new StreamWriter(@"C:\Users\grund\Logs\log.txt", true))
+            using (StreamWriter file = new StreamWriter(@"C:\Users\grund\Logs\log.txt", true))      //This code block can be used to log each card dealt in games to a file on the computer.
             {
                 file.WriteLine(DateTime.Now);
                 file.WriteLine(card);

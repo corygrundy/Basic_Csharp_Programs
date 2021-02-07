@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Casino.TwentyOne;
 
-namespace TwentyOne
+namespace Casino
 {
     public class TwentyOneGame : Game, IWalkAway
     {
@@ -109,20 +110,20 @@ namespace TwentyOne
                     }
                 }
             }
-            Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
+            Dealer.IsBusted = TwentyOneRules.IsBusted(Dealer.Hand);
             Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
-            while (!Dealer.Stay && !Dealer.isBusted)
+            while (!Dealer.Stay && !Dealer.IsBusted)
             {
                 Console.WriteLine("Dealer is hitting...");
                 Dealer.Deal(Dealer.Hand);
-                Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
+                Dealer.IsBusted = TwentyOneRules.IsBusted(Dealer.Hand);
                 Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
             }
             if (Dealer.Stay)
             {
                 Console.WriteLine("Dealer is staying.");
             }
-            if (Dealer.isBusted)
+            if (Dealer.IsBusted)
             {
                 Console.WriteLine("Dealer Busted!");
                 foreach (KeyValuePair<Player, int> entry in Bets)
