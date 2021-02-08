@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCTutorial.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,12 @@ namespace MVCTutorial.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            User user = new User();
+            user.Id = 1;
+            user.FirstName = "Cory";
+            user.LastName = "Grundy";
+            user.Age = 25;
+            return View(user);
         }
 
         public ActionResult About()
@@ -20,9 +26,9 @@ namespace MVCTutorial.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Contact(int id=0)
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = id;
 
             return View();
         }
