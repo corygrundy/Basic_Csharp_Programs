@@ -7,5 +7,9 @@
 </head>
 <body>
     @RenderBody()
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~budnles/bootstrap")
+    @RenderSection("scripts", required: false)
 </body>
 </html>
