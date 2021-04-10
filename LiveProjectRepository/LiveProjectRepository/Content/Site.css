@@ -1,0 +1,80 @@
+﻿/*Text color classes*/
+.cms-text-main {
+    color: var(--main-color);
+}
+
+.cms-text-main-light {
+    color: var(--main-color--light);
+}
+
+.cms-text-secondary {
+    color: var(--secondary-color);
+}
+
+.cms-text-secondary-dark {
+    color: var(--secondary-color--dark);
+}
+
+.cms-text-light {
+    color: var(--light-color);
+}
+
+.cms-text-dark {
+    color: var(--dark-color);
+}
+/*End color classes*/
+
+/*Background color classes*/
+.cms-bg-main {
+    background-color: var(--main-color);
+}
+
+.cms-bg-main-light {
+    background-color: var(--main-color--light);
+}
+
+.cms-bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.cms-bg-secondary-dark {
+    background-color: var(--secondary-color--dark);
+}
+
+.cms-bg-light {
+    background-color: var(--light-color);
+}
+
+.cms-bg-dark {
+    background-color: var(--dark-color);
+}
+/*End background color classes*/
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color); /*This should default all text to the white of the site.*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*Everything below is a regular part of the MVC scaffolding from setup.*/
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
